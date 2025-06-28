@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasa Posting WhatsApp - ATHA STORE</title>
+    <title>Jasa Posting Akun - ATHA STORE</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -621,7 +621,7 @@
                 </div>
                 <div class="store-name">ATHA STORE</div>
             </div>
-            <h1>FORMAT JASA POSTING WHATSAPP</h1>
+            <h1>FORMAT JASA POSTING AKUN ATHA STORE</h1>
             <div class="subtitle">[ BUKAN AKUN ADMIN! ]</div>
         </header>
         
@@ -636,7 +636,7 @@
                     
                     <div class="form-group">
                         <label class="form-label" for="login">LOGIN :</label>
-                        <input type="text" id="login" class="form-input" placeholder="Jumlah perangkat login" required>
+                        <input type="text" id="login" class="form-input" placeholder="Metode Login" required>
                     </div>
                     
                     <div class="form-group">
@@ -646,7 +646,7 @@
                     
                     <div class="form-group">
                         <label class="form-label" for="own">OWN :</label>
-                        <input type="text" id="own" class="form-input" placeholder="Kepemilikan akun" required>
+                        <input type="text" id="own" class="form-input" placeholder="Out/Pribadi/Reset/Dll" required>
                     </div>
                     
                     <div class="form-group">
@@ -660,8 +660,8 @@
                     </div>
                     
                     <div class="form-group">
-                        <label class="form-label" for="angka">ISI ANGKA TERAKHIR NOMORMU :</label>
-                        <input type="text" id="angka" class="form-input" placeholder="Contoh: 5769" maxlength="4" required>
+                        <label class="form-label" for="nomor">NOMORMU :</label>
+                        <input type="tel" id="nomor" class="form-input" placeholder="Contoh: 0819-XXXX-XXXX" required>
                     </div>
                     
                     <button type="submit" class="btn-submit">
@@ -696,7 +696,7 @@
                         </div>
                         <div class="contact-details">
                             <div class="contact-type">Email</div>
-                            <div class="contact-value">athastore150@gmail.com</div>
+                            <div class="contact-value">atha.store@business.id</div>
                         </div>
                     </div>
                 </div>
@@ -706,6 +706,42 @@
                     <h3 class="note-title">PENTING <i class="fas fa-exclamation-triangle"></i> :</h3>
                     <div class="note-content">
                         WAJIB MENGGUNAKAN JASA ADMIN ATHA STORE SUPAYA TIDAK TERJADI HAL YANG TIDAK DIINGINKAN, SEKECIL APAPUN TRANSAKSIMU GUNAKAN JASA ADMIN SUPAYA AMAN!
+                    </div>
+                </div>
+                
+                <div class="benefits">
+                    <h3 class="contact-title">KEUNTUNGAN MENGGUNAKAN JASA KAMI</h3>
+                    <div class="benefit-item">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #9D50FF, #6E3AFF);">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-value">Keamanan Transaksi Terjamin</div>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #9D50FF, #6E3AFF);">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-value">Proses Cepat dan Efisien</div>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #9D50FF, #6E3AFF);">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-value">Layanan Pelanggan 24/7</div>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, #9D50FF, #6E3AFF);">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-value">Kualitas Akun Premium</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -727,10 +763,10 @@
             const own = document.getElementById('own').value;
             const minus = document.getElementById('minus').value;
             const harga = document.getElementById('harga').value;
-            const angka = document.getElementById('angka').value;
+            const nomor = document.getElementById('nomor').value;
             
             // Membuat pesan WhatsApp
-            const message = `FORMAT JASA POST ATHA STORE\n[ BUKAN AKUN ADMIN! ]\n\n` +
+            const message = `FORMAT JASA POSTING AKUN ATHA STORE\n[ BUKAN AKUN ADMIN! ]\n\n` +
                            `AKUN : ${akun}\n` +
                            `LOGIN : ${login}\n` +
                            `SPEK AKUN : ${spek}\n` +
@@ -738,7 +774,7 @@
                            `MINUS : ${minus}\n` +
                            `HARGA : ${harga}\n` +
                            `MC : ATHA STORE\n` +
-                           `ISI ANGKA TERAKHIR NOMORMU : ${angka}\n\n` +
+                           `NOMORMU : ${nomor}\n\n` +
                            `NOTE ⚠️ : WAJIB MENGGUNAKAN JASA ADMIN ATHA STORE SUPAYA TIDAK TERJADI HAL YANG TIDAK DI INGINKAN, SEKECIL TRANSAKSIMU GUNAKAN JASA ADMIN SUPAYA AMAN!`;
             
             // Nomor admin WhatsApp (format internasional tanpa +)
@@ -762,11 +798,6 @@
             }, 5000);
         });
         
-        // Validasi input angka terakhir nomor
-        document.getElementById('angka').addEventListener('input', function() {
-            this.value = this.value.replace(/\D/g, '').substring(0, 4);
-        });
-        
         // Animasi saat halaman dimuat
         document.addEventListener('DOMContentLoaded', function() {
             const inputs = document.querySelectorAll('.form-input');
@@ -782,4 +813,4 @@
         });
     </script>
 </body>
-</html>
+    </html>
